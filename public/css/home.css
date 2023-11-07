@@ -1,0 +1,111 @@
+
+/* BANNER  */
+
+.banner{
+    margin-top: 253px; 
+}
+
+.banner img {
+    width: 100%;    
+}
+
+/* MAIN (PRODUCTOS)  */
+.cont-secc-productos {
+    background-color: rgb(225, 224, 224);
+}
+
+
+.secc-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto {    
+    width: 90%;
+    margin: 15px 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.producto img {
+    width: 100%;
+}
+
+.producto i {    
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: #39b54a solid 1px;
+    border-radius: 50%;        
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 15px;
+    color: #39b54a;
+}
+
+.descripcion {
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+   
+    /* MAIN (PRODUCTOS)  */
+
+    .secc-productos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;        
+    }
+
+    .producto {        
+        width: 45%;        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }  
+
+    .banner{
+        margin-top: 144px; 
+    }   
+    
+}
+
+@media(min-width: 1200px) {
+
+    /* HEADER  */
+    .header-top-bar,
+    .cont-navbar {
+        max-width: 1200px;
+        margin: auto
+    }
+
+    .cont-navbar li {
+        margin: 10px 9px 0 9px;
+    }
+
+    .header-copi {
+        max-width: none;
+        font-size: 20px;
+    }
+
+    .cont-navbar a {
+        font-size: 14px;
+    }
+
+
+    .producto{
+        width: 23%;
+    }
+
+    .banner{
+        margin-top: 146px;         
+    }   
+}
+

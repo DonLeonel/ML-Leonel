@@ -1,0 +1,163 @@
+/* GLOBAL  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.titulo-section {
+    padding: 20px 0px 0 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: rgba(61, 60, 60, 0.64);
+}
+
+/* header */
+
+.header {
+    background-color: #EAC926;
+    padding: 20px;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header-top-bar {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.header-search-bar {
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.header-copi {
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+}
+
+.burguer-menu {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.cont-navbar {
+    display: none;
+}
+
+.cont-navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cont-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* separacion FOOTER*/
+
+.footer {
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer article {
+    max-width: 60%;
+    margin: auto;
+}
+
+.footer article i {
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #1259c3;
+}
+
+
+@media (min-width: 768px) {
+
+    /* HEADER  */
+    .header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 18%;
+    }
+
+    .header-copi {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .burguer-menu {
+        display: none;
+    }
+
+    .cont-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cont-navbar ul {
+        display: flex;
+    }
+
+    .cont-navbar li {
+        margin: 0 5px;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    /* HEADER  */
+    .header-top-bar,
+    .cont-navbar {
+        max-width: 1200px;
+        margin: auto
+    }
+
+    .cont-navbar li {
+        margin: 10px 9px 0 9px;
+    }
+
+    .header-copi {
+        max-width: none;
+        font-size: 20px;
+    }
+
+    .cont-navbar a {
+        font-size: 14px;
+    }
+}
