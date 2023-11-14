@@ -9,6 +9,7 @@
 }
 
 body {
+    margin-top: 10px ;
     font-family: 'Roboto';
 }
 
@@ -24,10 +25,12 @@ body {
 .header {
     background-color: #EAC926;
     padding: 20px;
-
-    width: 100%;
+    width: 100%;  
+    
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header-top-bar {
