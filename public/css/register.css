@@ -1,30 +1,30 @@
-.principal{    
-    text-align: center; 
-    background-color: lightgrey;  
-    margin-top: 250px; 
+.principal {
+    text-align: center;
+    background-color: lightgrey;       
+    padding-bottom: 15px;
 }
 
-.principal form{    
-    padding: 20px;   
-    margin: 10px auto;    
+.principal form {
+    padding: 20px;
+    margin: 10px auto;
     width: 100%;
 }
 
-.principal form div{
+.principal form div {
     text-align: left;
     margin-bottom: 2rem;
 }
 
-.principal form div label{
+.principal form div label {
     display: block;
     font-weight: 500;
     margin-bottom: 8px;
 }
 
-.principal form div input[type = text],
-.principal form div input[type = email],
-.principal form div input[type = password],
-.principal form div input[type = date]{
+.principal form div input[type=text],
+.principal form div input[type=email],
+.principal form div input[type=password],
+.principal form div input[type=date] {
     width: 100%;
     height: 2rem;
     padding-left: 13px;
@@ -32,21 +32,21 @@
     border-radius: 5px;
 }
 
-.principal form button{
+.principal form button {
     margin: 0 20px;
     padding: 10px;
     border-radius: 10px;
 }
 
-button.reset{
+button.reset {
     background-color: rgb(188, 67, 67);
 }
 
-button.submit{
+button.submit {
     background-color: lightblue;
 }
 
-.perfil-user span{   
+.perfil-user span {
     margin: 0 5px;
 }
 
@@ -54,34 +54,43 @@ button.submit{
     margin-left: 10px;
 }
 
-.categ-interes{
+.categ-interes {
     margin: auto;
 }
 
-.categ-interes span{   
+.categ-interes span {
     margin-bottom: 10px;
     display: block;
-    text-align: left;    
+    text-align: left;
 }
 
-.categ-interes span input{
+.categ-interes span input {
     margin-right: 10px;
 }
 
-form div label{
-    font-weight: bold;    
+form div label {
+    font-weight: bold;
 }
 
-@media (min-width: 768px){
-    
-    .principal{          
-        margin-top: 155px; 
-    }   
+@media (min-width: 768px) {
+
+    .principal {
+        margin-top: 153px;
+    }
+
+    .principal form {
+
+        width: 60%;
+    }
 }
 
-@media (min-width: 1200px){
-    
-    .principal{          
-        margin-top: 162px; 
-    }   
+@media (min-width: 1200px) {
+
+    .principal {
+        margin-top: 152px;
+    }
+
+    .principal form {
+        width: 50%;
+    }
 }

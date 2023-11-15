@@ -9,12 +9,14 @@
 }
 
 body {
-    margin-top: 10px ;
+    margin-top: 250px;
     font-family: 'Roboto';
+    min-width: 240px;
 }
 
 .titulo-section {
-    padding: 20px 0px 0 10px;
+    margin-top: 30px;
+    padding: 60px 0px 0px 20px;
     font-weight: 600;
     font-size: 22px;
     color: rgba(61, 60, 60, 0.64);
@@ -25,8 +27,8 @@ body {
 .header {
     background-color: #EAC926;
     padding: 20px;
-    width: 100%;  
-    
+    width: 100%;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -39,11 +41,30 @@ body {
 }
 
 .header-search-bar {
-    margin-bottom: 15px;
+    position: relative;
+    margin: 0 auto 15px auto;
+    width: 80%;
+}
+
+.header-search-bar input {
+    border: none;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+}
+
+.header-search-bar button {
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    width: 35px;
+    height: 31px;
 }
 
 .logo {
-    width: 50%;
+    width: 60%;
     padding: 10px;
     margin-bottom: 15px;
 }
@@ -51,7 +72,7 @@ body {
 .header-copi {
     font-weight: 400;
     text-align: center;
-    font-size: 15px;
+    font-size: 15px;   
 }
 
 .burguer-menu {
@@ -87,10 +108,11 @@ body {
 
 /* separacion FOOTER*/
 
-.footer {
+.footer {   
     padding: 30px;
     background-color: white;
     text-align: center;
+    font-size: 14px;
 }
 
 .footer article {
@@ -108,18 +130,29 @@ body {
 
 @media (min-width: 768px) {
 
+    body {
+        margin-top: 154px;        
+    }
+
     /* HEADER  */
     .header-top-bar {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
 
     .logo {
-        width: 18%;
+        width: 20%;
     }
 
+    .header-search-bar {
+        width: 50%;
+    }    
+
     .header-copi {
+        width: 20%;
+        font-size: 17px;
         max-width: 350px;
         text-align: right;
     }
@@ -148,19 +181,39 @@ body {
     .header-top-bar,
     .cont-navbar {
         max-width: 1200px;
-        margin: auto
+        margin: auto;
     }
+
+    .logo {
+        width: 15%;
+    }
+
+    .header-search-bar{
+        width: 40%;
+    }    
 
     .cont-navbar li {
         margin: 10px 9px 0 9px;
     }
 
     .header-copi {
-        max-width: none;
-        font-size: 20px;
+        width: 30%;        
     }
 
     .cont-navbar a {
         font-size: 14px;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer article {
+        width: 28%;
+    }
+
+    .copyright {
+        margin: 50px auto 10px auto;
     }
 }
